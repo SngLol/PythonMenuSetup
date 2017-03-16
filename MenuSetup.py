@@ -105,78 +105,10 @@ class menu():
 		elif platform.system()=="Linux":
 			self.inputL()
 
-"""
-#How to set up your menu:
-Name = menu(
-	"Title.",				#"Title.\nInformation" if wanted
-	{
-	"AlternativeNumber0":[	#0-based & in string
-		"Alternative",
-		"nextMenu"			#Variable name in string / 0 for exit (non-string)
-		],
-	"AlternativeNumber1":[
-		"Alternative",
-		"nextMenu"
-		]
-	}
-)
-
-#One line setup:
-Name = menu("Title.",{"AlternativeNumber0":["Alternative","nextMenu"],"AlternativeNumber1":["Alternative","nextMenu"]})
-"""
-
 #Example Menu list:
-a=menu("Hello.",
-	{
-	"0":[
-		"Hi!",
-		"b"
-		],
-	"1":[
-		"Bye!",
-		"c"
-		],
-	"2":[
-		"Why?",
-		"d"
-		]
-	}
-)
-b=menu("Bye.",
-	{
-	"0":[
-		"Ok!",
-		0
-		],
-	"1":[
-		"Back.",
-		"a"
-		]
-	}
-)
-c=menu("No.",
-	{
-	"0":[
-		"Ha!",
-		0
-		],
-	"1":[
-		"Back.",
-		"a"
-		]
-	}
-)
-d=menu("I don't know.",
-	{
-	"0":[
-		"Ok!",
-		0
-		],
-	"1":[
-		"Back.",
-		"a"
-		]
-	}
-)
+a=menu("Hello.",{"0":["Hi!","b"],"1":["Bye!","c"],"2":["Why?","d"]})
+b=menu("Bye.",{"0":["Ok!",0],"1":["Back.","a"]})
+c=menu("No.",{"0":["Ha!",0],"1":["Back.","a"]})
+d=menu("I don't know.",{"0":["Ok!",0],"1":["Back.","a"]})
 
 a.run()
