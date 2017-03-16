@@ -1,4 +1,5 @@
 #Menu Setup
+#Copy this class and you're good to go ;)
 class menu():
 	def __init__(self,name,alt):
 		self.name=name
