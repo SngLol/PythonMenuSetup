@@ -88,6 +88,15 @@ class menu():
 			isInput=False
 		else:
 			eval(self.alt[str(select)][1]).run()
+	def getCon(self,con,cons):
+		if con==0:
+			return True
+		elif con==1:
+			return cons[0]==cons[1]
+		elif con==2:
+			return cons[0]<=cons[1]
+		elif con==3:
+			return cons[0]!=cons[1]
 	def run(self):
 		import os,platform
 		if platform.system()=="Windows":
@@ -97,13 +106,17 @@ class menu():
 		print(self.name,"\n")
 		self.selectL=[]
 		self.select=0
+		n=0
 		for i in range(0,len(self.alt)):
-			self.selectL.append("")
-			self.selectL[self.select]="<--"
-			print(self.alt[str(i)][0],self.selectL[i])
+			if self.getCon(self.alt[str(i)][2],self.alt[str(i)][3])==True:
+				self.selectL.append("")
+				self.selectL[self.select]="<--"
+				print(self.alt[str(i)][0])
 		if platform.system()=="Windows":
+			self.upt("cls")
 			self.inputW()
 		elif platform.system()=="Linux":
+			self.upt("clear")
 			self.inputL()
 
 #Example Menu list:
