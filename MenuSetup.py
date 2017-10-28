@@ -81,7 +81,8 @@ class menu():
 		self.selectL[self.select]="<--"
 		print(self.name,"\n")
 		for i in range(0,len(self.alt)):
-			print(self.alt[str(i)][0],self.selectL[i])
+			if self.getCon(self.alt[str(i)][2],self.alt[str(i)][3])==True:
+				print(self.alt[str(i)][0],self.selectL[i])
 	def next(self,select):
 		if self.alt[str(select)][1]==0:
 			global isInput
@@ -120,9 +121,9 @@ class menu():
 			self.inputL()
 
 #Example Menu list:
-a=menu("Hello.",{"0":["Hi!","b"],"1":["Bye!","c"],"2":["Why?","d"]})
-b=menu("Bye.",{"0":["Ok!",0],"1":["Back.","a"]})
-c=menu("No.",{"0":["Ha!",0],"1":["Back.","a"]})
-d=menu("I don't know.",{"0":["Ok!",0],"1":["Back.","a"]})
+a=menu("Hello.",{"0":["Hi!","b",0,[0,0]],"1":["Bye!","c",0,[0,0]],"2":["Why?","d",0,[0,0]]})
+b=menu("Bye.",{"0":["Ok!",0,0,[0,0]],"1":["Back.","a",0,[0,0]]})
+c=menu("No.",{"0":["Ha!",0,0,[0,0]],"1":["Back.","a",0,[0,0]]})
+d=menu("I don't know.",{"0":["Ok!",0,0,[0,0]],"1":["Back.","a",0,[0,0]]})
 
 a.run()
