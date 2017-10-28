@@ -25,11 +25,11 @@ Here's how you create a menu:
 
 	FirstMenu.run()			#This starts an interactive visualization of your first menu and changes to the next menu based on the users choises!
 	
-	The type of condition:
-	If set to 0, your alternative will always be displayed in that menu.
-	If set to 1, your alternative will only display if x is equal to y.
-	If set to 2, your alternative will only display if x is less or equal to y.
-	If set to 3, your alternative will only display if x does not equal to y.
+	#The type of condition:
+	#If set to 0, your alternative will always be displayed in that menu.
+	#If set to 1, your alternative will only display if x is equal to y.
+	#If set to 2, your alternative will only display if x is less or equal to y.
+	#If set to 3, your alternative will only display if x does not equal to y.
 
 The menu class is made so that you don't have to modify it in order to add menus, It takes care of the dirty work for you.
 Hope this helped some of you when it comes to menu creation in python :)
