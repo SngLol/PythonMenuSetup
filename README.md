@@ -1,4 +1,4 @@
-# PythonMenuSetup
+# PythonMenuSetup [<img src="https://camo.githubusercontent.com/326dd5cd5aa07adca69ff20e033fe21f663fb920/68747470733a2f2f696d6167652e666c617469636f6e2e636f6d2f69636f6e732f706e672f3132382f3130392f3130393631322e706e67" alt="image" title="Download" data-canonical-src="https://image.flaticon.com/icons/png/128/109/109612.png" width="35" height="35">](https://goo.gl/y1G4Kq)
 Simple cross platform menu setup for python 3 in terminal
 
 This is a class that you can put in any of your python programs!
@@ -33,3 +33,5 @@ Here's how you create a menu:
 
 The menu class is made so that you don't have to modify it in order to add menus, It takes care of the dirty work for you.
 Hope this helped some of you when it comes to menu creation in python :)
+
+[Amount of Downloads](https://goo.gl/#analytics/goo.gl/y1G4Kq/all_time)
